@@ -7,6 +7,6 @@ function my_dictionary(){
         Sound:"Bark",
     };
     delete Animal.Sound; // this deletes the sound key-pair. 
-    document.getElementById("dictionary").innerHTML= Animal.Sound;  // Links the key-pair to the HTML element. However, the output will be undefined. 
+    document.getElementById("dictionary").innerHTML= Animal.Sound;  // Links the key-pair to the HTML element. However, the output will be undefined due to code above. 
 }
 
