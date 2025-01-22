@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Using the console to debug code</title>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="pageLoad()">
+        <button onclick="clickCount()">Counter</button>
+        <button onclick="resetCount()"> Reset Counter</button>
+        <p id="counter"></p>
+        <script>
+            function pageLoad(){
+                var greeting = "Welcome to ";
+                greeting += "Learning how to debug code";
+                greeting += "Using the console with dev tools";
+                window.alert(greeting);
+            }
+            var count = 0;
+            function clickCount(){
+                count ++;
+                document.getElementById("counter").innerHTML = count;
+
+            }
+
+            function resetCount(){
+                var count = "";
+                document.getElementById("counter").innerHTML = count;
+            }
+        </script>
+    </body>
+</html>
