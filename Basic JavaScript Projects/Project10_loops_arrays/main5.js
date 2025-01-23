@@ -6,4 +6,4 @@ function cat_pics(){
     cat[2] = "eating";
     cat[3] = "purring";
     document.getElementById("array").innerHTML= "In this picture, the cat is" + "  " + cat[2]+ ".";
-}
+} // output: In this picture, the cat is eating.//
