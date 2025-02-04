@@ -64,18 +64,6 @@ button:hover {
     color: #ffffff
 }
 
-.equal-sign-operator {
-    background-color: blue;
-    border-color: darkslategray;
-    color: #fff;
-    height: 100%;
-    grid-area: 2/4/6/5;
-
-}
-
-.equal-sign-operator:hover{
-    background-color: darkblue;
-}
 
 .Calculator-keys {
     display: grid;
