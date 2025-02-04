@@ -73,10 +73,8 @@ const Perform_Calculation = {
     '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
     '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
-   
-    '=': (First_Operand, Second_Operand) => Second_Operand,
-
-
+    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
+    '=': (First_Operand, Second_Operand) => Second_Operand
 };
 
 function Calculator_Reset() {
@@ -93,9 +91,10 @@ function Update_Display() {
     // input tag in the HTML document
     const display = document.querySelector('.Calculator-screen');
     display.value = Calculator.Display_Value;
+  
 }
-
 Update_Display();
+
 // this section monitors button clicks 
 const keys = document.querySelector('.Calculator-keys');
 keys.addEventListener('click', (event) => {
@@ -111,18 +110,24 @@ if (target.classList.contains('operator')){
     Update_Display();
     return;
 }
-if (target.classList.contains('decimal')){
+if (target.classList.contains('decimal-function')){
     Input_Decimal(target.value);
     Update_Display();
     return;
 }
 
 // ensures that AC clears all input from the calculator screen
-if (target.classList.contains('all-clear')){
+if (target.classList.contains('all-clear-function')){
     Calculator_Reset();
     Update_Display();
     return;
 }
+if (target.classList.contains('equal')){
+Perform_Calculation(target.value);
+Update_Display();
+}
+
 Input_Digit(target.value);
 Update_Display();
+
 })
