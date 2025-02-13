@@ -122,10 +122,6 @@ if (target.classList.contains('all-clear-function')){
     Update_Display();
     return;
 }
-if (target.classList.contains('equal')){
-Perform_Calculation(target.value);
-Update_Display();
-}
 
 Input_Digit(target.value);
 Update_Display();
