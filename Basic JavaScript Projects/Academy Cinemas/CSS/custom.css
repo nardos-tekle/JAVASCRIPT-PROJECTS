@@ -28,10 +28,19 @@ body{
 
 /*navbar*/
 
-:navbar{
+.navbar{
     background-color:var(--secondary-color);
     border-bottom: 5px solid rgb(98,0,0);
     height:100px;
+}
+
+.nav.shrink{
+    height:80px;
+    transition: 0.5 ease;
+}
+/* adds a transition to the movie drop dwonon shring and scroll*/
+.nav-collapse{
+    transition: margin-top 0.5 ease;
 }
 
 /* affects the title in the navbar academy cinemas*/
