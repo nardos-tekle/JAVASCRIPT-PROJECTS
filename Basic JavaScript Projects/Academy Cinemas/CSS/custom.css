@@ -274,10 +274,24 @@ footer{
 
 }
 
+.star-rating{
+   width: 80%; 
+}
+
 .row{
     color: white;
     font-size:25px;
     font-family: var(--main-font-family);
     padding: -20px;
     margin: -10px;  
+}
+
+/*toast*/
+
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
